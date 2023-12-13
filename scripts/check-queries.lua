@@ -1,5 +1,8 @@
 #!/usr/bin/env -S nvim -l
 
+-- Be sure to load parsers and query files from the plugin's current working copy.
+vim.opt.runtimepath:prepend "."
+
 -- Equivalent to print(), but this will ensure consistent output regardless of
 -- operating system.
 local function io_print(text)
